@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checker</title>
+</head>
+<body>
+<form method="post" action="/enter_names">
+    <input type="text" name="name1">
+    <br>
+    <input type="text" name="name2">
+    <br>
+    <button type="submit">Check</button>
+</form>
+{% if name1 and name2 %}
+    <div>{{ name1 }} and {{ name2 }} match each other by {{ result }}%</div>
+{% endif %}
+</body>
+</html>
